@@ -46,7 +46,15 @@ class _InvestmentsScreenState extends State<InvestmentsScreen> {
                       top: MediaQuery.of(context).padding.top + kToolbarHeight,
                       bottom: 16,
                     ),
-                    child: const TotalBalanceWidget(),
+                    child: const FlexibleSpaceBar(
+                      titlePadding: EdgeInsets.zero,
+                      expandedTitleScale: 1,
+                      title: TotalBalanceWidget(),
+                      background: Align(
+                        alignment: Alignment(0, -0.15),
+                        child: Text('aaaa'),
+                      ),
+                    ),
                   ),
                 ),
                 SliverPadding(
